@@ -1,4 +1,3 @@
-//don't forget I can look at the api in the network tab of developer tools just by refreshing 
 //the page and clicking scoreboard json right after it loads and look at the data 
 //under the preview tab so the json will be organized
 
@@ -8,8 +7,7 @@ let url = 'https://data.nba.net/prod/v1/multi/scoreboard.json'
 axios.get(url)
   .then(function (response) {
     const html = response.data;
-    let array = []
-    let games = html.dates[0].games
+    let games = html.dates[1].games
     for (let i = 0; i < games.length; i++) {
       let visitor = (games[i].vTeam.triCode)
       let home = (games[i].hTeam.triCode)
