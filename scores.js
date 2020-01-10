@@ -1,4 +1,3 @@
-//the page and clicking scoreboard json right after it loads and look at the data 
 //under the preview tab so the json will be organized
 
 const axios = require('axios');
